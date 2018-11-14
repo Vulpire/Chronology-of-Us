@@ -14,12 +14,13 @@ public class GenTerrain : MonoBehaviour {
 
     public float smoothness;
 
-    float seed;
+    int seed;
 
 	void Start () {
         Generate();
-        seed = Random.Range(-10000f, 10000f);
-	}
+        seed = Random.Range(-10000, 10000);
+	} 
+    
 	
 	public void Generate () {
         for (int i = 0; i < ChunkW; i++)
